@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beanshttp://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="authority" class="beans.Authority"></bean>
+	<bean id="loginIdentify" class="beans.LoginIdentify"></bean>
+	<bean id="manager" class="beans.Manager"></bean>
+	<bean id="participator" class="beans.Participator"></bean>
+	<bean id="participator2project" class="beans.Participator2project"></bean>
+	<bean id="superuser" class="beans.SuperUser"></bean>
+</beans> 

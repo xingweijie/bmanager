@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+	    <alias>bm_read</alias>
+	    <driver-url>jdbc:mysql://localhost/backstageManagement?useUnicode=true&amp;characterEncoding=utf8</driver-url>
+	    <driver-class>com.mysql.jdbc.Driver</driver-class>
+	    <statistics>1m,15m,1d</statistics>
+	    <driver-properties>
+			<property name="user" value="root"/>
+			<property name="password" value="123456"/>
+	    </driver-properties>
+<maximum-connection-count>1024</maximum-connection-count>
+<minimum-connection-count>10</minimum-connection-count>
+<prototype-count>8</prototype-count>
+<maximum-active-time>300000</maximum-active-time>
+<maximum-new-connections>20</maximum-new-connections>
+<house-keeping-sleep-time>30000</house-keeping-sleep-time>
+<house-keeping-test-sql>select CURRENT_DATE</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+	    <alias>bm_write</alias>
+	    <driver-url>jdbc:mysql://localhost/backstageManagement?useUnicode=true&amp;characterEncoding=utf8</driver-url>
+	    <driver-class>com.mysql.jdbc.Driver</driver-class>
+	    <statistics>1m,15m,1d</statistics>
+	    <driver-properties>
+			<property name="user" value="root"/>
+			<property name="password" value="123456"/>
+	    </driver-properties>
+<maximum-connection-count>1024</maximum-connection-count>
+		<minimum-connection-count>10</minimum-connection-count>
+    <prototype-count>8</prototype-count>
+		<maximum-active-time>30000</maximum-active-time>
+    <maximum-new-connections>20</maximum-new-connections>
+    <house-keeping-sleep-time>30000</house-keeping-sleep-time>
+		<house-keeping-test-sql>select CURRENT_DATE</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely>
